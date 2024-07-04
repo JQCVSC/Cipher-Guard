@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherGuard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cipher[Guard]</h1>
+        
+        <div class="encryption-section">
+            <h2 class="section-title">Encryption</h2>
+            <div class="form-group">
+                <label for="message">Message to Encrypt:</label>
+                <textarea id="message" rows="4"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="algorithm">Encryption Algorithm:</label>
+                <select id="algorithm">
+                    <option value="AES">AES</option>
+                    <option value="RSA">RSA</option>
+                </select>
+            </div>
+            
+            <button onclick="encryptMessage()" class="glow">Encrypt</button>
+            
+            <div id="result" class="result"></div>
+        </div>
+        
+        <div class="decryption-section">
+            <h2 class="section-title">Decryption</h2>
+            <div class="form-group">
+                <label for="encrypted">Message to Decrypt:</label>
+                <textarea id="encrypted" rows="4"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="decryptAlgorithm">Decryption Algorithm:</label>
+                <select id="decryptAlgorithm">
+                    <option value="AES">AES</option>
+                    <option value="RSA">RSA</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="key">Decryption Key:</label>
+                <input type="text" id="key">
+            </div>
+            
+            <button onclick="decryptMessage()" class="glow">Decrypt</button>
+            
+            <div id="decryptResult" class="result"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
