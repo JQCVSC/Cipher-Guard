@@ -13,7 +13,8 @@ function encryptMessage() {
     .then(data => {
         document.getElementById('result').innerHTML = `
             <p>Encrypted: ${data.encrypted}</p>
-            <p>Key: ${data.key}</p>
+            <p>Key: ${algorithm === 'RSA' ? 'Private Key (keep this secret!)' : data.key}</p>
+            <textarea readonly>${data.key}</textarea>
         `;
     });
 }
