@@ -1,5 +1,17 @@
 CipherGuard is a web-based encryption and decryption tool that supports multiple algorithms including AES and RSA.
 
+# CipherGuard
+
+CipherGuard is a web-based encryption and decryption tool that supports multiple algorithms including AES and RSA.
+
+![CipherGuard Screenshot](https://github.com/JQCVSC/Cipher-Guard/assets/65506340/d8b51c54-ee59-4a43-8ec9-d3dea2ae51b4)
+
+## Features
+
+- Message encryption and decryption
+- Support for AES and RSA algorithms
+- User-friendly web interface
+
 ## Features
 
 - Message encryption and decryption
