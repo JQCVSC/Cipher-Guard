@@ -30,5 +30,3 @@ This project provides a basic framework for an encryption/decryption tool with a
 Remember to handle keys securely in a real-world application. The key management functions (store_key and retrieve_key) are placeholders where you'd implement secure key storage and retrieval mechanisms.
 You can expand on this project by adding more encryption algorithms, implementing the file encryption/decryption functions, improving the user interface, and enhancing overall security measures
 =======
-# Cipher-Guard
->>>>>>> 8aae9544553cbd49e9c0610fb6a3af139c3e167c
