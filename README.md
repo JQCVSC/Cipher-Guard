@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 CipherGuard is a web-based encryption and decryption tool that supports multiple algorithms including AES and RSA.
 
 ## Features
